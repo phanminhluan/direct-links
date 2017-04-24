@@ -11,4 +11,11 @@ wget https://github.com/phanminhluan/direct-links/blob/master/vni_fonts.tar.gz?r
 tar -zxvf vni_fonts.tar.gz
 rm vni_fonts.tar.gz
 
-fc-cache -f -v
+sudo mkdir -p /usr/share/fonts/ms_fonts
+sudo mv *.ttf /usr/share/fonts/ms_fonts/
+
+sudo chown root:root /usr/share/fonts/ms_fonts -R
+sudo chmod 644 /usr/share/fonts/ms_fonts/* -R
+sudo chmod 755 /usr/share/fonts/ms_fonts
+
+sudo fc-cache -f -v
