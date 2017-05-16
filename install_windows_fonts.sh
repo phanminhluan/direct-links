@@ -8,6 +8,7 @@ rm fonts.tar.gz
 sudo rm -rf /usr/share/fonts/ms_fonts
 sudo mkdir -p /usr/share/fonts/ms_fonts
 sudo mv *.ttf /usr/share/fonts/ms_fonts/
+sudo mv *.TTF /usr/share/fonts/ms_fonts/
 
 sudo chown root:root /usr/share/fonts/ms_fonts -R
 sudo chmod 644 /usr/share/fonts/ms_fonts/* -R
